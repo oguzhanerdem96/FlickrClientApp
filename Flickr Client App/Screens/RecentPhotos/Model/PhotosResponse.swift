@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct PhotosResponse:Codable {
+struct PhotosResponse: Codable {
     let photos: Photos?
 }

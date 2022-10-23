@@ -18,7 +18,8 @@
 		66AAF5342901905B000A0DFC /* PhotoDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66AAF5332901905B000A0DFC /* PhotoDetail.storyboard */; };
 		66AAF5372902E18F000A0DFC /* PhotosResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AAF5362902E18F000A0DFC /* PhotosResponse.swift */; };
 		66AAF53A2902E1E2000A0DFC /* Photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AAF5392902E1E2000A0DFC /* Photos.swift */; };
-		66AAF53C2902E5B6000A0DFC /* photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AAF53B2902E5B6000A0DFC /* photo.swift */; };
+		66AAF53C2902E5B6000A0DFC /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AAF53B2902E5B6000A0DFC /* Photo.swift */; };
+		66B889A82905664F008DB17A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B889A72905664F008DB17A /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +36,8 @@
 		66AAF5332901905B000A0DFC /* PhotoDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PhotoDetail.storyboard; sourceTree = "<group>"; };
 		66AAF5362902E18F000A0DFC /* PhotosResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosResponse.swift; sourceTree = "<group>"; };
 		66AAF5392902E1E2000A0DFC /* Photos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photos.swift; sourceTree = "<group>"; };
-		66AAF53B2902E5B6000A0DFC /* photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = photo.swift; sourceTree = "<group>"; };
+		66AAF53B2902E5B6000A0DFC /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		66B889A72905664F008DB17A /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +99,8 @@
 		66AAF52829003C91000A0DFC /* App */ = {
 			isa = PBXGroup;
 			children = (
-				66AAF51229003C60000A0DFC /* AppDelegate.swift */,
-				66AAF51429003C60000A0DFC /* SceneDelegate.swift */,
+				66B889A42905662A008DB17A /* Core */,
+				66B889A32905661E008DB17A /* Delegates */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -160,9 +162,34 @@
 			children = (
 				66AAF5362902E18F000A0DFC /* PhotosResponse.swift */,
 				66AAF5392902E1E2000A0DFC /* Photos.swift */,
-				66AAF53B2902E5B6000A0DFC /* photo.swift */,
+				66AAF53B2902E5B6000A0DFC /* Photo.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		66B889A32905661E008DB17A /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				66AAF51229003C60000A0DFC /* AppDelegate.swift */,
+				66AAF51429003C60000A0DFC /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		66B889A42905662A008DB17A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				66B889A529056635008DB17A /* Networking */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		66B889A529056635008DB17A /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				66B889A72905664F008DB17A /* NetworkManager.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,7 +264,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66AAF53C2902E5B6000A0DFC /* photo.swift in Sources */,
+				66B889A82905664F008DB17A /* NetworkManager.swift in Sources */,
+				66AAF53C2902E5B6000A0DFC /* Photo.swift in Sources */,
 				66AAF52B290043DF000A0DFC /* PhotoTableViewCell.swift in Sources */,
 				66AAF51729003C60000A0DFC /* RecentPhotosViewController.swift in Sources */,
 				66AAF51329003C60000A0DFC /* AppDelegate.swift in Sources */,
